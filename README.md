@@ -2,8 +2,7 @@
 
 Brwiki é uma lib feita para a linguagem de programação ruby.
 
-O seu único objetivo é pegar o título e o primeiro parágrafo de uma pagina do Wikipedia! 
-Fique tranquilo, você não precisará escrever o link completo 😉
+O seu único objetivo é pegar o título e o primeiro parágrafo de uma pagina do Wikipedia.
 
 
 # Como usar/exemplos
