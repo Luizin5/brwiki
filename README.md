@@ -10,7 +10,7 @@ O seu único objetivo é pegar o título e o primeiro parágrafo de uma pagina d
 
 É muito fácil usar o brwiki, você precisará de:
 
-1 • Nokogiri (gem install nokogiri --use-system-libraries)
+1 • Nokogiri (gem install nokogiri -- --use-system-libraries)
 
 2 • httparty (gem install httparty)
 
@@ -69,6 +69,3 @@ mesma coisa para o comando wiki.getlinks
 Viu só? É muito facil usar o brwiki!
 
 
-# ToDo
-
- - [ ] fazer as pesquisas no Google quando o não encontrar resultados no wikipedia
