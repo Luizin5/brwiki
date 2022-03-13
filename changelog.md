@@ -21,4 +21,4 @@
 1. Percebi agora que o gettitle não estava funcionando, agora ele funciona
 2. Sei que o codigo é ruim e inlegivel, estarei melhorando nas proximas atualizações.
 3. Feliz ano novo!
-***feel free to translate the docs for your language :)
+***feel free to translate the docs for your language :)***
