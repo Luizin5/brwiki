@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'brwiki'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.licenses    = ['MIT']
   s.summary     = "wikipedia"
   s.description = "obtenha paginas do wikipedia direto em seu terminal"

@@ -18,7 +18,7 @@ class Brwiki
 
     @fonte = "https://#{@lang}.m.wikipedia.org/wiki/#{artigo}"
 
-    @site = HTTParty.get("https://#{@lang}.m.wikipedia.org/wiki/#{artigo}")
+    @site = HTTParty.get(@fonte)
 
     @sitehtml = Nokogiri::HTML(@site.response.body)
 
@@ -35,46 +35,35 @@ class Brwiki
 
 
   def gettitle
-    sitehtml = Nokogiri::HTML(@site.response.body)
-
-    seleciona_tag = @sitehtml.css("title")
-
-    seleciona_tag = seleciona_tag.to_s
-
-    titulo_sem_tags = seleciona_tag.text
-
-    return titulo_sem_tags
+    return @sitehtml.search("title").text
   end
 
 
 
   def getdescription(paragrafo)
-
     if paragrafo.eql?("all")
       return @sitehtml.search("p").text
     else
        p = @sitehtml.search("p")[paragrafo]
-
        return p.text
-
     end
-
   end
+
+
 
   def geturl
     fonte = @fonte
     return fonte
   end
 
+
+
   def getlinks(links)
     if links == "all"
       links = @sitehtml.search("a")
-
     else
       links = @sitehtml.search("a")[links]
     end
-
     return @lol + links.attr("href")
   end
-
 end
