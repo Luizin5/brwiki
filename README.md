@@ -68,4 +68,5 @@ mesma coisa para o comando wiki.getlinks
 
 Viu só? É muito facil usar o brwiki!
 
+***Feel free to translate the doce for tour language
 
