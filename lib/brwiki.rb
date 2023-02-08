@@ -3,7 +3,7 @@ require "open-uri"
 
 module Brwiki
 
-  def search lang, pesquisa
+  def self.search lang, pesquisa
     page = Nokogiri::HTML URI::open("https://#{lang}.m.wikipedia.org/wiki/#{pesquisa}")
     [page.css("h1")[0].text,
      fisrt_paragraph(page.css("p").to_a)[0].text]
